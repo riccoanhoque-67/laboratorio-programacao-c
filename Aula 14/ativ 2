@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+    int matriz[2][2];
+
+    printf("Digite 4 valores inteiros:\n");
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("Valor [%d][%d]: ", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("\n===== MATRIZ 2x2 =====\n");
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d\t", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
