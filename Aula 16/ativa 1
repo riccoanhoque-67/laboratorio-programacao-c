@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+    char palavra[50];
+    int contador = 0;
+
+    printf("Digite uma palavra: ");
+    scanf("%49s", palavra);
+
+    /* percorre ate encontrar o caractere '\0' (sem usar strlen) */
+    for (int i = 0; palavra[i] != '\0'; i++) {
+        contador++;
+    }
+
+    printf("Quantidade de letras digitadas: %d\n", contador);
+
+    return 0;
+}
